@@ -1,0 +1,16 @@
+Data Analytics Revision Paper
+Data models evolve from conceptual (that is; a quick, high-level view of the business requirement) to logical (where the 
+entities involved are expanded and include more detail) and finally the physical data model, which can be implemented with a 
+specific database provider (like Oracle and SQL Server). 
+Which of the following choices is correct? 
+A. The entire statement is true 
+B. Only the statement on conceptual data model is true 
+C. Only the statement on logical data model is true 
+D. Only the statement on physical data model is true
+
+Answer
+Data modeling is a process of creating a conceptual, logical, and physical model of data to help understand the business requirements and design a database that can efficiently store and retrieve the data. The process of data modeling involves several steps, including:
+1.Requirements gathering: The first step in data modeling is to gather requirements from stakeholders. This involves identifying the data elements that need to be represented, as well as the relationships between those elements.
+2.Conceptual modeling: Once the requirements have been gathered, the next step is to create a conceptual model of the data. This involves identifying the entities, attributes, and relationships between those entities.
+3.Logical modeling: After the conceptual model has been created, the next step is to create a logical model of the data. This involves refining the conceptual model and adding details such as data types and constraints.
+4.Physical modeling: The final step in data modeling is to create a physical model of the data. This involves designing the actual database schema and deciding on the storage mechanisms for the data.
