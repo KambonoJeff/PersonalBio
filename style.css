@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+    background-image: url(./slide/image10.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-size: 20px;
+	font-weight: 600;
+}
+h1:hover{
+	letter-spacing: 8px;
+}
+.container{
+	margin: 0 2em;
+}
+.box{
+	max-width: 60em;
+	margin: auto;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about{
+	padding: .9em;
+	margin-right: 1.2em;
+}
+img {
+	width:13em;
+	height: 18em;
+	border: 3px solid orange;
+	border-radius: .4em;
+
+}
+img:hover{
+	width:14em;
+	height: 19em;
+	border: 3px solid black;
+	border-radius: 1em;
+
+}
+.animation-frame{
+	width: 3.5em;
+	height:3.5em;
+	border: none;
+	padding: .3em;
+	margin: .2em 1em;
+}
+.animation-frame:hover{
+	width: 3.8em;
+	height:3.8em;
+	border: none;
+
+}
+header {
+	background-color: orange;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+h1 {
+	margin: 0.2em 0;
+	font-size: 36px;
+}
+section {
+	margin: 40px 0;
+	padding: 1.3em;
+	line-height: 1.9em;
+}
+#leadership{
+	background-color: orange;
+	color: black;
+}
+#education{
+	background-color: orange;
+	color: black;
+}
+span{
+	font-weight: bolder;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bolder;
+	margin: 0 0 20px;
+	letter-spacing: 4px;
+}
+h2:hover{
+	cursor: pointer;
+	letter-spacing: 6px;
+	border: 2px solid black;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+	border-radius: 10px;
+	padding: .7em;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+li {
+	margin-bottom: 10px;
+	list-style: none;
+	text-decoration: none;
+
+}
+#skills li::before {
+
+	margin-right: 10px;
+}
+#experience li::before {
+	margin-right: 10px;
+}
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+  .card {
+	width: 30%;
+	margin-bottom: 30px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+	overflow: hidden;
+  }
+  .card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  }
+  .details {
+	padding: 20px;
+  }
+  .details h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+  }
+  .details p {
+	margin-top: 0;
+	margin-bottom: 20px;
+  }
+  .displayNone{
+	display: none;
+}
+  button {
+	background-color: orange;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	margin: .7em auto;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+  }
+  button:hover {
+	background-color:#fff;
+	color: orange;
+	border: 3px solid black;
+  }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 4em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: .7em;
+  margin-bottom: .8em;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border-bottom: 2px solid #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #333;
+}
