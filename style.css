@@ -43,7 +43,19 @@ img:hover{
 	border-radius: 1em;
 
 }
+.animation-frame{
+	width: 3.5em;
+	height:3.5em;
+	border: none;
+	padding: .3em;
+	margin: .2em 1em;
+}
+.animation-frame:hover{
+	width: 3.8em;
+	height:3.8em;
+	border: none;
 
+}
 header {
 	background-color: orange;
 	color: #333;
