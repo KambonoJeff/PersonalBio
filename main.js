@@ -1,3 +1,63 @@
+require('dotenv').config()
+const nodemailer = require('nodemailer');
+
+const email_ = process.env.EMAIL
+const pass_ = process.env.PASS
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const phoneNumber = document.getElementById("phonenumber").value;
+const message = document.getElementById("message").value;
+function sendEmail(){
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: email_,
+            pass: pass_
+        }
+    });
+    let mailOptions = {
+        from: email, 
+        to: email_, 
+        subject:`Commment from ${name}`, 
+        text: message, 
+        html: '<b>Hello world?</b>'
+    };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.err(error);
+        } else {
+            console.log('Message sent: %s', info.messageId);
+        }
+    });
+    
+
+}
+
+function validate(){
+    let formTitle = document.getElementById("form")
+    const validName = /^[a-zA-Z ]{2,30}$/.test(name);
+    const validEmail = /\S+@\S+\.\S+/.test(email);
+    const validPhoneNum = /^[0-9]{10}$/.test(phoneNumber);
+    if(!validName){
+        formTitle.innerHTML ='<h2>Please Enter A valid Name!!</h2>' ;
+        return;
+    }
+    if(!validEmail){
+        formTitle.innerHTML ='<h2>Please Enter A valid Email!!</h2>' ;
+        return;
+    }
+    if(!validPhoneNum){
+        formTitle.innerHTML = '<h2>Please Enter A valid Phone Number!!</h2>';
+        return;
+    }
+    formTitle.innerHTML =`Welcome ${ name }, Your Message has been successfully sent`;  
+}
+function doThis(event){
+    event.preventDefault();
+    function validate();
+    function sendEmail();
+  
+}
 const education = document.getElementById("Education").addEventListener('click',()=>{
     const educationContent = document.getElementById("educationContent");
     console.log(educationContent);
@@ -49,27 +109,3 @@ const Referees = document.getElementById("Referees").addEventListener('click',()
         RefereesContent.style.display="none";
     }
 });
-function doThis(event){
-    event.preventDefault();
-    let formTitle = document.getElementById("form")
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phoneNumber = document.getElementById("phonenumber").value;
-    const message = document.getElementById("message").value;
-    const validName = /^[a-zA-Z ]{2,30}$/.test(name);
-    const validEmail = /\S+@\S+\.\S+/.test(email);
-    const validPhoneNum = /^[0-9]{10}$/.test(phoneNumber);
-    if(!validName){
-        formTitle.innerHTML ='<h2>Please Enter A valid Name!!</h2>' ;
-        return;
-    }
-    if(!validEmail){
-        formTitle.innerHTML ='<h2>Please Enter A valid Email!!</h2>' ;
-        return;
-    }
-    if(!validPhoneNum){
-        formTitle.innerHTML = '<h2>Please Enter A valid Phone Number!!</h2>';
-        return;
-    }
-    formTitle.innerHTML =`Welcome ${ name }, Your Message has been successfully sent`;    
-}

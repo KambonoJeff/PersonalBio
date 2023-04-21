@@ -2,3 +2,4 @@
 *cheatcodes.txt
 #ignore the environmental variables
 *.env
+*node_modules
