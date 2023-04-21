@@ -1,2 +1,2 @@
 # Profile Bio
-This repository contains bio a short bio
+This repository contains a short bio

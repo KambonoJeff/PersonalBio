@@ -44,15 +44,15 @@ img:hover{
 
 }
 .animation-frame{
-	width: 3.5em;
-	height:3.5em;
+	width: 2em;
+	height:2em;
 	border: none;
 	padding: .3em;
 	margin: .2em 1em;
 }
 .animation-frame:hover{
-	width: 3.8em;
-	height:3.8em;
+	width: 2.3em;
+	height:2.3em;
 	border: none;
 
 }
@@ -93,7 +93,6 @@ h2:hover{
 	letter-spacing: 6px;
 	border: 2px solid black;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 	border-radius: 10px;
 	padding: .7em;
 }
