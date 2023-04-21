@@ -3,4 +3,4 @@
 #ignore the environmental variables
 *.env
 *node_modules
-*images/kambono.png
+*images/kambono.jpg
