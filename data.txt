@@ -1,9 +1,0 @@
-Data Analytics Revision Paper
-Data models evolve from conceptual (that is; a quick, high-level view of the business requirement) to logical (where the 
-entities involved are expanded and include more detail) and finally the physical data model, which can be implemented with a 
-specific database provider (like Oracle and SQL Server). 
-Which of the following choices is correct? 
-A. The entire statement is true 
-B. Only the statement on conceptual data model is true 
-C. Only the statement on logical data model is true 
-D. Only the statement on physical data model is true
