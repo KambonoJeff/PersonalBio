@@ -4,3 +4,5 @@
 *.env
 *node_modules
 *images/kambono.jpg
+*package-lock.json
+*package.json
