@@ -1,13 +1,15 @@
 require('dotenv').config()
-const nodemailer = require('nodemailer');
 
 const email_ = process.env.EMAIL
 const pass_ = process.env.PASS
-const name = document.getElementById("name").value;
-const email = document.getElementById("email").value;
-const phoneNumber = document.getElementById("phonenumber").value;
-const message = document.getElementById("message").value;
+
 function sendEmail(){
+    console.log("sendEmail Summoned")
+    const nodemailer = require('nodemailer');   
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phonenumber").value;
+    let message = document.getElementById("message").value;
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -34,6 +36,11 @@ function sendEmail(){
 }
 
 function validate(){
+    console.log("Validate Summoned")
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phonenumber").value;
+    let message = document.getElementById("message").value;
     let formTitle = document.getElementById("form")
     const validName = /^[a-zA-Z ]{2,30}$/.test(name);
     const validEmail = /\S+@\S+\.\S+/.test(email);
@@ -54,8 +61,8 @@ function validate(){
 }
 function doThis(event){
     event.preventDefault();
-    function validate();
-    function sendEmail();
+    validate();
+    sendEmail();
   
 }
 const education = document.getElementById("Education").addEventListener('click',()=>{
