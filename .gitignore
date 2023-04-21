@@ -1,5 +1,6 @@
 #Ignore this cheat codes
-*cheatcodes.txt
+*code.txt
 #ignore the environmental variables
 *.env
 *node_modules
+*images/kambono.png
