@@ -1,0 +1,4 @@
+#Ignore this cheat codes
+*cheatcodes.txt
+#ignore the environmental variables
+*.env
