@@ -4,7 +4,7 @@ $email = $_POST['email'];
 $phonenumber = $_POST['phonenumber'];
 $message = $_POST['message'];
 
-require "vendo/autoload.php" ;
+require "vendor/autoload.php" ;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 $mail = new PHPMailer(true);
