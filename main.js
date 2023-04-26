@@ -1,40 +1,6 @@
-require('dotenv').config()
-
-const email_ = process.env.EMAIL
-const pass_ = process.env.PASS
-
-function sendEmail(){
-    console.log("sendEmail Summoned")
-    const nodemailer = require('nodemailer');   
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phoneNumber = document.getElementById("phonenumber").value;
-    let message = document.getElementById("message").value;
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: email_,
-            pass: pass_
-        }
-    });
-    let mailOptions = {
-        from: email, 
-        to: email_, 
-        subject:`Commment from ${name}`, 
-        text: message, 
-        html: '<b>Hello world?</b>'
-    };
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.err(error);
-        } else {
-            console.log('Message sent: %s', info.messageId);
-        }
-    });
-    
-
+function onload(event){
+    console.log(event.currentTarget.navigator.geolocation.protoType);
 }
-
 function validate(){
     console.log("Validate Summoned")
     let name = document.getElementById("name").value;
@@ -59,15 +25,31 @@ function validate(){
     }
     formTitle.innerHTML =`Welcome ${ name }, Your Message has been successfully sent`;  
 }
+function findLocation(){
+    console.log("Al find you");
+    let location = navigator.geolocation();
+    if (location){
+        location.getCurrentPosition(showPosition(position));
+    }
+    else{
+        console.log("geolocation not enabled");
+    }
+    function showPosition(position){
+        let lat = position.coords.latitude;
+        let long = position.coords.longitude;
+        console.log(lat);
+        console.log(long);
+    }
+}
 function doThis(event){
     event.preventDefault();
     validate();
-    sendEmail();
+    findLocation();
   
 }
+
 const education = document.getElementById("Education").addEventListener('click',()=>{
     const educationContent = document.getElementById("educationContent");
-    console.log(educationContent);
     if(educationContent.style.display==="none"){
         educationContent.style.display="block";
     }
