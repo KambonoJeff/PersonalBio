@@ -40,6 +40,7 @@ function findLocation(){
         console.log(lat);
         console.log(long);
     }
+    //navigation
 }
 function doThis(event){
     event.preventDefault();
