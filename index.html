@@ -6,14 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <!-- 
-Create web profile/resume with the following details:
 About (Include your contact details and photo - and can connect to your professional social media accounts such as linkedin, github etc)
 Education
 Skills and Experiences
 Projects
 Leadership Roles
 Referees -->
-<body>
+<body onload=onload(event)>
 	<header>
 		<div class="container">				
 			<h1>KAMBONO JEFF</h1>
@@ -107,7 +106,6 @@ Referees -->
 		<section class="Referees box">
 			<h2 id="Referees" align="center">Referees</h2>
 			<ul id="RefereesContent" class="displayNone">
-				<li><span>Henry Gaya: Director, Email: henryfordlimited@gmail.com  contact: 0711250132</span></li>
 				<li><span>Daniel Jack: Director, Email: jackdaniel@gmail.com  contact: 0711250132</span></li>
 				<li><span>captain morgan: Director, Email: captainmorgan@gmail.com  contact: 0711250132</span></li>
 			</ul>
@@ -120,9 +118,8 @@ Referees -->
 				<img src="./png/linkedin.png" alt="Animation frame 4" class="animation-frame">
 				
 			  </div>
-		</section>
-		
-		<form >
+		</section>		
+		<form action="php/emailSender.php" method="post">
 			<div >
 				<h2 id="form" >Kambono Jeff Contact Me</h2>
 			</div>
